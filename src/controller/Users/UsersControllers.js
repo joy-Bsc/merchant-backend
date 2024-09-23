@@ -1,12 +1,12 @@
 const DataModel = require('../../model/users/UsersModel');
 const OTPSModel = require('../../model/users/OTPSModel');
-const UserCreateService = require('../../services/Users/UserCreateService');
-const UserLoginService = require('../../services/Users/UserLoginService');
-const UserUpdateService = require('../../services/Users/UserUpdateService');
-const UserDetailsService = require('../../services/Users/UserDetailsService');
-const UserResetPassService = require('../../services/Users/UserResetPassService');
-const UserVerifyOtpService = require('../../services/Users/UserVerifyOtpService');
-const UserVerifyEmailService = require('../../services/Users/UserVerifyEmailService');
+const UserCreateService = require('../../services/users/UserCreateService');
+const UserLoginService = require('../../services/users/UserLoginService');
+const UserUpdateService = require('../../services/users/UserUpdateService');
+const UserDetailsService = require('../../services/users/UserDetailsService');
+const UserResetPassService = require('../../services/users/UserResetPassService');
+const UserVerifyOtpService = require('../../services/users/UserVerifyOtpService');
+const UserVerifyEmailService = require('../../services/users/UserVerifyEmailService');
 
 exports.Registration = async (req, res) => {
     let response = await UserCreateService(req, DataModel);
